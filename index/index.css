@@ -1,0 +1,32 @@
+.navegacao {
+    vertical-align: middle;
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    margin-right: 47vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid a {
+    line-height: 20vh;
+    text-align: center;
+    text-decoration: none;
+    width: 45vh;
+    height: 22vh;
+    border-radius: 4px;
+    background-color: rgb(16, 16, 165);
+    border: none;
+    color: white;
+    font-size: 4ch;
+    margin-bottom: 3vh;
+    transition: all 0.5s;
+}
+
+.grid a:hover {
+    opacity: 0.7;
+    font-size: 5ch;
+}

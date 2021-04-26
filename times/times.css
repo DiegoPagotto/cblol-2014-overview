@@ -1,0 +1,29 @@
+.gridTimes {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: rgb(3, 3, 107);
+    margin-left: 3vh;
+    margin-bottom: 6vh;
+    text-align: center;
+    width: 17vw;
+}
+
+.card .container {
+    margin-bottom: 2vh;
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
