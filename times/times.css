@@ -27,3 +27,16 @@
 .card:hover {
     transform: scale(1.2);
 }
+
+.hide {
+    display: none;
+}
+
+.card:hover .hide {
+    display: block;
+}
+
+.info {
+    font-size: 1.4ch;
+    margin-right: 1vh;
+}
