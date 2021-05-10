@@ -14,3 +14,54 @@ body {
     margin-top: 3vh;
     text-align: center;
 }
+
+#menuModais {
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+#menuModais button {
+    padding: 2ch;
+    background-color: rgb(3, 3, 107);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menuModais button:hover {
+    background-color: rgb(5, 5, 68);
+}
+
+div.modal {
+    background-color: rgb(3, 3, 107);
+}
+
+div.modal input[type=text],
+div.modal input[type=date] {
+    background-color: rgb(6, 6, 44);
+    margin-left: auto;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    width: 100%;
+    color: white;
+    height: 3ch;
+}
+
+div.modal button {
+    display: inline;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(76, 76, 172);
+    color: white;
+    width: 100%;
+    padding: 2vh;
+    cursor: pointer;
+}
+
+div.modal button:hover {
+    background-color: rgb(45, 45, 94);
+}

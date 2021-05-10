@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBLOL 2015 | Split 2</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="jogadores.css">
+</head>
+
+<body>
+    <div class="imgTopo">
+        <a href="../index.html"><img src="../assets/cblol_logo.png" alt="" srcset="" style="width: 10vw;"></a>
+    </div>
+    <br><br><br>
+
+    <div id="menuModais">
+        <a href="#incluir" rel="modal:open"><button>Incluir</button></a>
+        <a href="#alterar" rel="modal:open"><button>Alterar</button></a>
+        <a href="#excluir" rel="modal:open"><button>Excluir</button></a>
+        <a href="#listar" rel="modal:open"><button>Listar</button></a>
+
+        <div id="incluir" class="modal">
+            <form action="#">
+                <label for="cpf">CPF:</label>
+                <br>
+                <input type="text" name="cpf" id="cpf">
+                <br>
+
+                <label for="nome">Nome:</label>
+                <br>
+                <input type="text" name="nome" id="nome">
+                <br>
+
+                <label for="datanasc">Data de Nascimento:</label>
+                <br>
+                <input type="date" name="datanasc" id="datanasc">
+                <br>
+
+                <label for="sexo">Sexo:</label>
+                <br>
+                <input type="radio" name="sexo" id="sexoM" value="M" style="margin-top: 1vh"> <label for="sexoM">Masculino<label>
+                <input type="radio" name="sexo" id="sexoF" value="F"> <label for="sexoF">Feminino<label>
+                <br>
+                <br>
+
+                <label for="altura">Altura:</label>
+                <br>
+                <input type="text" name="altura" id="altura">
+                <br>
+
+                <label for="peso">Peso:</label>
+                <br>
+                <input type="text" name="peso" id="peso">
+                <br>
+
+                <label for="email">Email:</label>
+                <br>
+                <input type="text" name="email" id="email">
+                <br>
+
+
+                <label for="telefone">Telefone:</label>
+                <br>
+                <input type="text" name="telefone" id="telefone">
+                <br>
+
+                <button rel="modal:close">Inserir</button>
+            </form>
+        </div>
+
+        <div id="alterar" class="modal">
+            <form action="#">
+                <label for="cpf">CPF do jogador que será alterado:</label>
+                <br>
+                <input type="text" name="cpf" id="cpf">
+                <br>
+
+                <label for="nome">Nome:</label>
+                <br>
+                <input type="text" name="nome" id="nome">
+                <br>
+
+                <label for="datanasc">Data de Nascimento:</label>
+                <br>
+                <input type="date" name="datanasc" id="datanasc">
+                <br>
+
+                <label for="sexo">Sexo:</label>
+                <br>
+                <input type="radio" name="sexo" id="sexoM" value="M" style="margin-top: 1vh"> <label for="sexoM">Masculino<label>
+                <input type="radio" name="sexo" id="sexoF" value="F"> <label for="sexoF">Feminino<label>
+                <br>
+                <br>
+
+                <label for="altura">Altura:</label>
+                <br>
+                <input type="text" name="altura" id="altura">
+                <br>
+
+                <label for="peso">Peso:</label>
+                <br>
+                <input type="text" name="peso" id="peso">
+                <br>
+
+                <label for="email">Email:</label>
+                <br>
+                <input type="text" name="email" id="email">
+                <br>
+
+
+                <label for="telefone">Telefone:</label>
+                <br>
+                <input type="text" name="telefone" id="telefone">
+                <br>
+
+                <button rel="modal:close">Inserir</button>
+            </form>
+        </div>
+
+        <div id="excluir" class="modal">
+            <label for="cpf">CPF:</label>
+            <br>
+            <input type="text" name="cpf" id="cpf">
+            <br>
+            <button rel="modal:close" style="background-color:red">Excluir</button>
+        </div>
+
+        <div id="listar" class="modal">
+            <div style="float: left;width: 50%;border-right: 3px solid black; padding-right: 2vw;">
+                <label for="cpf">CPF:</label>
+                <br>
+                <input type="text" name="cpf" id="cpf">
+                <br>
+                <button rel="modal:close">Listar</button>
+            </div>
+            <div style="float: right;">
+                <button rel="modal:close" style="margin-top: 4vh; width: 12vw;">Listar Todos</button>
+            </div>
+        </div>
+    </div>
+
+    <article>
+        <h1>CNB e-Sports Club</h1>
+        <div class="gridJogadores">
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/64/CNB_Aoshi_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170801174129" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Aoshi</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Topo</p>
+                        <p><b>Nome:</b> Franklin Coutinho</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fd/CNB_Nappon_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170801174200" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Nappon</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Selva</p>
+                        <p><b>Nome:</b> Carlos Henrique Rücker</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f7/CNB_YoDa_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170801174320" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>YoDa</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Meio</p>
+                        <p><b>Nome:</b> Felipe Noronha</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bf/CNB_pbo_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170801174421" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>pbO</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Atirador</p>
+                        <p><b>Nome:</b> Pablo Yuri</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/47/CNB_Wos_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170801174338" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Wos</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Suporte</p>
+                        <p><b>Nome:</b> Willyan Bonpam</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h1>g3nerationX</h1>
+        <div class="gridJogadores">
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/34/G3x_Zantins_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170801223008" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Zantins</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Topo</p>
+                        <p><b>Nome:</b> Luccas Martins Zanqueta Silva</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/G3x_Krow_CBLOL2015.jpg/revision/latest/scale-to-width-down/220?cb=20170801222923" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Krow</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Selva</p>
+                        <p><b>Nome:</b>Lucas Rabaça</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/ff/G3x_TaeYeon_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170801223034" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>TaeYeon</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Meio</p>
+                        <p><b>Nome:</b> Rodrigo Panisa</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0c/G3x_TheFoxz_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170801223030" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>TheFoxz</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Atirador</p>
+                        <p><b>Nome:</b>Renato de Souza Valsirolli</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5a/G3x_Professor_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170801222953" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Professor</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Suporte</p>
+                        <p><b>Nome:</b> Matheus Leirião</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h1>INTZ</h1>
+        <div class="gridJogadores">
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/45/INTZ_Yang_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802005411" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Yang</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Topo</p>
+                        <p><b>Nome:</b> Felipe Zhao</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a9/INTZ_Jockster_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802005305" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Jockster</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Selva</p>
+                        <p><b>Nome:</b> Luan Cardoso</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/INTZ_tockers_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802005500" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Tockers</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Meio</p>
+                        <p><b>Nome:</b> Gabriel Claumann</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/90/INTZ_micaO_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802005443" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Micao</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Atirador</p>
+                        <p><b>Nome:</b> Micael Rodrigues</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/84/INTZ_Alocs_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802005230" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Alocs</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Suporte</p>
+                        <p><b>Nome:</b> Leonardo Belo</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h1>INTZ Red</h1>
+        <div class="gridJogadores">
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5f/RED_Robo_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802101604" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Robo</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Topo</p>
+                        <p><b>Nome:</b> Leonardo Souza</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f5/RED_Leozuxo_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802101533" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Leozuxo</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Selva</p>
+                        <p><b>Nome:</b> Leonardo Camícia</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b2/RED_Brucer_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802101431" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Brucer</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Meio</p>
+                        <p><b>Nome:</b> Bruno Pereira de Souza</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/RED_SacyR_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802101608" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>SacyR</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Atirador</p>
+                        <p><b>Nome:</b> Gustavo Rossi</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2f/RED_Eryon_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802101537" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Eryon</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Suporte</p>
+                        <p><b>Nome:</b> Márcio Costa Jordão da Silveira Reis</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+    <article>
+        <h1>KaBuM! Black</h1>
+        <div class="gridJogadores">
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5d/KBB_element_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802022152" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Element</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Topo</p>
+                        <p><b>Nome:</b> Arlindo Leal Lana Neto</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1f/KBB_Danagorn_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802022117" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Danagorn</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Selva</p>
+                        <p><b>Nome:</b> Daniel Drummond</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c9/KBB_Vash_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802022205" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Vash</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Meio</p>
+                        <p><b>Nome:</b> Guilherme del Buono</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/ff/KBB_Matsukaze_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802022104" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Matsukaze</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Atirador</p>
+                        <p><b>Nome:</b> Pedro Gama</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a2/KBB_Espeon_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802022059" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Espeon</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Suporte</p>
+                        <p><b>Nome:</b> Martin Gonçalves</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+    <article>
+        <h1>KaBuM! Orange</h1>
+        <div class="gridJogadores">
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e8/KBO_LEP_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802022423" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>LEP</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Topo</p>
+                        <p><b>Nome:</b> Pedro Luiz Marcari</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2d/KBO_BruNo_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802022418" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>BruNo</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Selva</p>
+                        <p><b>Nome:</b> Bruno Oliveira</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e7/KBO_TinOwns_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802022405" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>TinOwns</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Meio</p>
+                        <p><b>Nome:</b> Thiago Sartori</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/28/KBO_Minerva_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802022436" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Minerva</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Atirador</p>
+                        <p><b>Nome:</b> Gustavo Queiroz Alves</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c9/KBO_ziriguidun_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802022410" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Ziriguidun</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Suporte</p>
+                        <p><b>Nome:</b> Pedro Vilarinho</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <article>
+        <h1>Keyd Stars</h1>
+        <div class="gridJogadores">
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8a/VFK_Leko_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802164733" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Leko</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Topo</p>
+                        <p><b>Nome:</b> Whesley Holler Iareski</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b4/VFK_Revolta_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802164750" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Revolta</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Selva</p>
+                        <p><b>Nome:</b> Gabriel Henud Cresci</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c8/VFK_takeshi_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802164804" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>takeshi</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Meio</p>
+                        <p><b>Nome:</b> Murilo Alves</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/09/VFK_esA_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802164822" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>esA</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Atirador</p>
+                        <p><b>Nome:</b> André Eidi Yanagimachi Pavezi</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fe/VFK_Loop_CBLOL2015.jpg/revision/latest/scale-to-width-down/340?cb=20170802164724" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Loop</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Suporte</p>
+                        <p><b>Nome:</b> Caio Almeida</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <article>
+        <h1>paiN Gaming</h1>
+        <div class="gridJogadores">
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2d/PaiN_Mylon_Worlds2015.jpg/revision/latest/scale-to-width-down/536?cb=20170802091008" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Mylon</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Topo</p>
+                        <p><b>Nome:</b> Matheus Borges</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/55/PaiN_SirT_Worlds2015.jpg/revision/latest/scale-to-width-down/536?cb=20170802091021" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>SirT</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Selva</p>
+                        <p><b>Nome:</b> Thúlio Carlos</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/af/PaiN_Kami_Worlds2015.jpg/revision/latest/scale-to-width-down/536?cb=20170802090946" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Kami</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Meio</p>
+                        <p><b>Nome:</b> Gabriel Bohm Santos</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/51/PaiN_brTT_Worlds2015.jpg/revision/latest/scale-to-width-down/536?cb=20170802091118" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>brTT</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Atirador</p>
+                        <p><b>Nome:</b> Felipe Gonçalves</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2b/PaiN_Dioud_Worlds2015.jpg/revision/latest/scale-to-width-down/536?cb=20170802090915" alt="Logo CNB">
+                <div class="container">
+                    <h4><b>Dioud</b></h4>
+                    <div class="info hide" style="margin-top: 1vh;">
+                        <p><b>Posição:</b> Suporte</p>
+                        <p><b>Nome:</b> Hugo Padioleau</p>
+                        <p><b>CPF:</b> XXX.XXX.XXX-XX</p>
+                        <p><b>Data de Nascimento:</b> XX/XX/XXXX</p>
+                        <p><b>Sexo:</b> M</p>
+                        <p><b>Peso:</b> 75kg</p>
+                        <p><b>Altura:</b> 175cm</p>
+                        <p><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                        <p><b>Email:</b> XXXXXXXX@XXXXX.XXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <br><br><br><br><br>
+
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</body>
+
+</html>

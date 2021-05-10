@@ -16,6 +16,104 @@
     </div>
     <br><br><br>
 
+    <div id="menuModais">
+        <a href="#incluir" rel="modal:open"><button>Incluir</button></a>
+        <a href="#alterar" rel="modal:open"><button>Alterar</button></a>
+        <a href="#excluir" rel="modal:open"><button>Excluir</button></a>
+        <a href="#listar" rel="modal:open"><button>Listar</button></a>
+
+        <div id="incluir" class="modal">
+            <form action="#">
+                <label for="codigo">Código:</label>
+                <br>
+                <input type="text" name="codigo" id="codigo">
+                <br>
+
+                <label for="nome">Nome:</label>
+                <br>
+                <input type="text" name="nome" id="nome">
+                <br>
+
+                <label for="fundacao">Fundação:</label>
+                <br>
+                <input type="date" name="fundacao" id="fundacao">
+                <br>
+
+                <label for="localizacao">Localização:</label>
+                <br>
+                <input type="text" name="localizacao" id="localizacao">
+                <br>
+
+                <label for="contato">Contato:</label>
+                <br>
+                <input type="text" name="contato" id="contato">
+                <br>
+
+                <label for="diretor">Diretor:</label>
+                <br>
+                <input type="text" name="diretor" id="diretor">
+                <br>
+
+                <button rel="modal:close">Inserir</button>
+            </form>
+        </div>
+
+        <div id="alterar" class="modal">
+            <form action="#">
+                <label for="codigo">Código do time que será alterado:</label>
+                <br>
+                <input type="text" name="codigo" id="codigo">
+
+                <label for="nome">Nome:</label>
+                <br>
+                <input type="text" name="nome" id="nome">
+                <br>
+
+                <label for="fundacao">Fundação:</label>
+                <br>
+                <input type="date" name="fundacao" id="fundacao">
+                <br>
+
+                <label for="localizacao">Localização:</label>
+                <br>
+                <input type="text" name="localizacao" id="localizacao">
+                <br>
+
+                <label for="contato">Contato:</label>
+                <br>
+                <input type="text" name="contato" id="contato">
+                <br>
+
+                <label for="diretor">Diretor:</label>
+                <br>
+                <input type="text" name="diretor" id="diretor">
+                <br>
+
+                <button rel="modal:close">Alterar</button>
+            </form>
+        </div>
+
+        <div id="excluir" class="modal">
+            <label for="codigo">Código:</label>
+            <br>
+            <input type="text" name="codigo" id="codigo">
+            <br>
+            <button rel="modal:close" style="background-color:red">Excluir</button>
+        </div>
+
+        <div id="listar" class="modal">
+            <div style="float: left;width: 50%;border-right: 3px solid black; padding-right: 2vw;">
+                <label for="codigo">Código:</label>
+                <br>
+                <input type="text" name="codigo" id="codigo">
+                <br>
+                <button rel="modal:close">Listar</button>
+            </div>
+            <div style="float: right;">
+                <button rel="modal:close" style="margin-top: 4vh; width: 12vw;">Listar Todos</button>
+            </div>
+        </div>
+    </div>
 
     <div class="gridTimes">
         <div class="card">
@@ -123,6 +221,14 @@
             </div>
         </div>
     </div>
+
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 </body>
 
 </html>
