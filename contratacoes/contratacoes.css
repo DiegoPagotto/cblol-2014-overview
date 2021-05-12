@@ -1,0 +1,69 @@
+a {
+  text-decoration: none;
+  color: unset;
+  padding: 0;
+  margin: 0;
+}
+
+.gridTimes {
+  width: 80vw;
+  margin: 5vh auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: rgb(3, 3, 107);
+  margin-left: 3vh;
+  margin-bottom: 6vh;
+  text-align: center;
+  width: 17vw;
+}
+
+.card .container {
+  margin-bottom: 2vh;
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.hide {
+  display: none;
+}
+
+.card:hover .hide {
+  display: block;
+}
+
+.info {
+  font-size: 1.4ch;
+  margin-right: 1vh;
+}
+
+th,
+td {
+  padding: 5px;
+  border: 2px solid #2d2d5e;
+  text-align: center;
+}
+
+td {
+  font-size: 1.4ch;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td > img.time_logo {
+  width: 2.5vw;
+  height: 5vh;
+}
