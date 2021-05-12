@@ -1,16 +1,5 @@
-.imgTopo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-}
-
-.imgTopo > h1 {
-  font-size: 6ch;
-}
-
-div.modal {
-  max-width: max-content;
+div#menuModais {
+  margin-top: 5vh;
 }
 
 div#fundadores > form > input {
