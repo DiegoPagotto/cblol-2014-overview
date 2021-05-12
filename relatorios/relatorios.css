@@ -1,0 +1,50 @@
+div#menuModais {
+  margin-top: 5vh;
+}
+
+div#fundadores > form > input {
+  background: #f0f0f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  width: 100px;
+  height: 30px;
+  font-size: 1.8ch;
+  font-weight: bold;
+  text-align: center;
+}
+th,
+td {
+  padding: 5px;
+  border: 2px solid #2d2d5e;
+  text-align: center;
+}
+
+td {
+  font-size: 1.4ch;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td > a > img.time_logo {
+  width: 2.5vw;
+  height: 5vh;
+}
+
+.card {
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: rgb(3, 3, 107);
+  text-align: center;
+  width: 17vw;
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+}
+
+.info {
+  font-size: 1.4ch;
+  margin-right: 1vh;
+}
